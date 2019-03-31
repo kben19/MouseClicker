@@ -4,9 +4,19 @@
 public class Driver {
 
     public Driver(){
-        Model myModel = new Model();
+        try {
+            Model myModel = new Model();
+            View myView = new View();
 
-        View myView = new View();
+            Controller myController = new Controller();
+            myController.addModel(myModel);
+            myController.addView(myView);
+
+            myView.addController(myController);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
 
 
     }
