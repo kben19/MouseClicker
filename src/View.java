@@ -1,13 +1,16 @@
 /**
  * Created by benzali on 3/31/2019.
  */
+import ObserverPackage.Observer;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Vector;
 
-public class View {
+public class View implements Observer {
     private TextField xTextField, yTextField;
     private Button submitButton;
 
@@ -49,5 +52,15 @@ public class View {
             System.exit(0);
         } //windowClosing()
     } //CloseListener
+
+    @Override
+    public void update(Vector<String> object){
+
+    }
+
+    @Override
+    public void updateMousePos(int x, int y){
+
+    }
 
 }

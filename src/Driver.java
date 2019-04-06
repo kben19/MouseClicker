@@ -13,6 +13,8 @@ public class Driver {
             myController.addView(myView);
 
             myView.addController(myController);
+
+            myModel.attach(myView);
         }
         catch(Exception e){
             e.printStackTrace();

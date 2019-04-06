@@ -1,10 +1,12 @@
 /**
  * Created by benzali on 3/31/2019.
  */
+import ObserverPackage.Subject;
+
 import java.awt.Robot;
 import java.util.Random;
 
-public class Model {
+public class Model extends Subject {
 
     private Robot myRobot;
 
