@@ -7,5 +7,5 @@ import java.util.Vector;
  */
 public interface Observer {
     void update(Vector<String> anObject);
-    void updateMousePos(int x, int y);
+    void updateMousePos(double x, double y);
 }

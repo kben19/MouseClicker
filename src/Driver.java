@@ -5,8 +5,8 @@ public class Driver {
 
     public Driver(){
         try {
-            Model myModel = new Model();
             View myView = new View();
+            Model myModel = new Model();
 
             Controller myController = new Controller();
             myController.addModel(myModel);

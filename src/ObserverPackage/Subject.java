@@ -20,7 +20,7 @@ public class Subject {
         }
     }
 
-    public void updateMousePos(int x, int y){
+    public void updateMousePos(double x, double y){
         for(Observer o : observers){
             o.updateMousePos(x, y);
         }
