@@ -1,6 +1,7 @@
 /**
  * Created by benzali on 3/31/2019.
  */
+import Model.DataType;
 import ObserverPackage.Observer;
 
 import javax.swing.*;
@@ -98,6 +99,19 @@ public class View implements Observer {
     public String getXTextField(){  return xTextField.getText();    }
 
     public String getYTextField(){  return yTextField.getText();    }
+
+    public String getNameField(){   return nameField.getText();     }
+
+    public String getDelayField(){  return delayField.getText();    }
+
+    public DataType getDataType(){
+        if(typeBox.getSelectedIndex() == 0){
+            return DataType.ACTION;
+        }
+        else{
+            return DataType.LOOP;
+        }
+    }
 
     public void addController(ActionListener controller){
         submitButton.addActionListener(controller);

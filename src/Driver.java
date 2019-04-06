@@ -1,3 +1,5 @@
+import Model.Model;
+
 /**
  * Created by benzali on 3/31/2019.
  */

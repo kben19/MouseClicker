@@ -1,3 +1,5 @@
+import Model.Model;
+
 /**
  * Created by benzali on 3/31/2019.
  */
@@ -11,7 +13,7 @@ public class Controller implements java.awt.event.ActionListener {
 
     public void actionPerformed(java.awt.event.ActionEvent e){
         if(e.getActionCommand().equals("Submit")){
-            aModel.addAction(Integer.parseInt(aView.getXTextField()), Integer.parseInt(aView.getYTextField()));
+            aModel.addMove(aView.getNameField(), aView.getXTextField(), aView.getYTextField(), aView.getDelayField(), aView.getDataType());
         }
         else if(e.getActionCommand().equals("Show")){
             aModel.mousePos();
